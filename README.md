@@ -1,6 +1,6 @@
 # Project101
 This is my multi-month study plan for going from android developer to software engineer for a large company.
-> I study plan about 3-4 hours a day, for the next 7 months
+> My study study plan about 3-4 hours per day, for the next 7 months
 
 ## Table of Contents
 - [Prerequisite Knowledge](#prerequisite-knowledge)
