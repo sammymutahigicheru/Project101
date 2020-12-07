@@ -48,10 +48,31 @@ public class AsymptoticAnalysis {
         * O(Log N) test
         *
         * */
-        analysis1.binarySearch(20);
+        /*analysis1.binarySearch(20);
         analysis2.binarySearch(20);
         analysis3.binarySearch(20);
-        analysis4.binarySearch(20);
+        analysis4.binarySearch(20);*/
+        /*
+        * Quick Sort
+        * O(N Log N) Test
+        * O (n log n) Most sorts are at least O(N) because
+    every element must be looked at, at least once.
+    The bubble sort is O(N^2)
+    To figure out the number of comparisons we need
+    to make with the Quick Sort we first know that
+    it is comparing and moving values very
+    efficiently without shifting. That means values
+    are compared only once. So each comparison will
+    reduce the possible final sorted lists in half.
+    Comparisons = log n! (Factorial of n)
+    Comparisons = log n + log(n-1) + .... + log(1)
+    This evaluates to n log n
+
+        * */
+        timeStarted = System.currentTimeMillis();
+        analysis1.quickSort(0,analysis1.itemsInArray);
+        endTime = System.currentTimeMillis();
+        System.out.println("Quick Sort Took: "+(endTime - timeStarted));
 
     }
     //O(1)
@@ -112,12 +133,43 @@ public class AsymptoticAnalysis {
             }else if(theArray[middleIndex] > value){
                 highIndex = middleIndex -1;
             }else{
-                System.out.println("Found A match For Value: "+value + " at Index: "+middleIndex);
+                System.out.println("\nFound a Match for " + value
+                                + " at Index " + middleIndex);
+
                 lowIndex = highIndex + 1;
             }
             timesThrough++;
 
         }
+        endTime = System.currentTimeMillis();
+        System.out.println("Binary Search took: "+(endTime - timeStarted));
+        System.out.println("Times Through: "+timesThrough);
+    }
+    private void quickSort(int left,int right){
+        if ((left - right) <= 0){
+            return; //already sorted
+        }
+        int pivot = theArray[right];
+        int pivotLocation = partitionArray(left,right,pivot);
+        quickSort(left,pivotLocation -1);
+        quickSort(pivotLocation +1,right);
+
+    }
+
+    private int partitionArray(int left, int right, int pivot) {
+        int leftPointer = left - 1;
+        int rightPointer = right;
+        while(true){
+            while (theArray[++leftPointer] < pivot);
+            while (rightPointer > 0 && theArray[--rightPointer] > pivot);
+            if(leftPointer >= rightPointer){
+                break;
+            }else{
+                swapValues(leftPointer,rightPointer);
+            }
+        }
+        swapValues(leftPointer,right);
+        return leftPointer;
     }
 
     private void swapValues(int index1, int index2) {
