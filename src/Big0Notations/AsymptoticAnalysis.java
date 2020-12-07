@@ -13,5 +13,10 @@ public class AsymptoticAnalysis {
     public static void main(String[] args) {
 
     }
-
+    private void generateArray(){
+        for(int i=0;i<arraySize;i++){
+            theArray[i] = (int)(Math.random()*1000) + 10;
+            itemsInArray = arraySize -1;
+        }
+    }
 }
