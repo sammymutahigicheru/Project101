@@ -13,6 +13,11 @@ public class AsymptoticAnalysis {
     public static void main(String[] args) {
 
     }
+    //O(1)
+    //adding an item at a specific index in the array
+    private void addItem(int newItem){
+        theArray[itemsInArray++] = newItem;
+    }
     private void generateArray(){
         for(int i=0;i<arraySize;i++){
             theArray[i] = (int)(Math.random()*1000) + 10;
