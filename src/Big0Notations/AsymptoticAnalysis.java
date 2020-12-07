@@ -27,17 +27,21 @@ public class AsymptoticAnalysis {
         /*
         * Linear Search
         * O(n) Test
-        * */
+        * *//*
         analysis1.linearSearchForValue(20);
         analysis2.linearSearchForValue(20);
         analysis3.linearSearchForValue(20);
-        analysis4.linearSearchForValue(20);
+        analysis4.linearSearchForValue(20);*/
 
         /*
         * Bubble Sort
         * O(n^2) Test
         *
         * */
+        analysis1.bubbleSort();
+        analysis2.bubbleSort();
+        analysis3.bubbleSort();
+        analysis4.bubbleSort();
 
     }
     //O(1)
@@ -69,6 +73,25 @@ public class AsymptoticAnalysis {
     * Bubble Sort
     *
     * */
+    private void bubbleSort(){
+        timeStarted = System.currentTimeMillis();
+        for(int i=arraySize-1;i>1;i--){
+            for(int j=0;j<i;j++){
+                if(theArray[j] > theArray[j+1]){
+                    swapValues(j,j+1);
+                }
+            }
+        }
+        endTime = System.currentTimeMillis();
+        System.out.println("Bubble Sort Took: "+(endTime - timeStarted));
+    }
+
+    private void swapValues(int index1, int index2) {
+        int temp = theArray[index1];
+        theArray[index1] = theArray[index2];
+        theArray[index2] = temp;
+    }
+
     private void generateArray(){
         for(int i=0;i<arraySize;i++){
             theArray[i] = (int)(Math.random()*1000) + 10;
