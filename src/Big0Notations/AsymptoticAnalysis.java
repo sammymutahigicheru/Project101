@@ -38,10 +38,20 @@ public class AsymptoticAnalysis {
         * O(n^2) Test
         *
         * */
-        analysis1.bubbleSort();
+        /*analysis1.bubbleSort();
         analysis2.bubbleSort();
         analysis3.bubbleSort();
-        analysis4.bubbleSort();
+        analysis4.bubbleSort();*/
+
+        /*
+        * Binary Search
+        * O(Log N) test
+        *
+        * */
+        analysis1.binarySearch(20);
+        analysis2.binarySearch(20);
+        analysis3.binarySearch(20);
+        analysis4.binarySearch(20);
 
     }
     //O(1)
@@ -84,6 +94,30 @@ public class AsymptoticAnalysis {
         }
         endTime = System.currentTimeMillis();
         System.out.println("Bubble Sort Took: "+(endTime - timeStarted));
+    }
+    /*
+    * O(Log N)
+    * Binary Search
+    *
+    * */
+    private void binarySearch(int value){
+        int lowIndex = 0;
+        int highIndex = arraySize -1;
+        int timesThrough = 0;
+        timeStarted = System.currentTimeMillis();
+        while(lowIndex < highIndex){
+            int middleIndex = (lowIndex + highIndex)/2;
+            if(theArray[middleIndex] < value ){
+                lowIndex = highIndex +1;
+            }else if(theArray[middleIndex] > value){
+                highIndex = middleIndex -1;
+            }else{
+                System.out.println("Found A match For Value: "+value + " at Index: "+middleIndex);
+                lowIndex = highIndex + 1;
+            }
+            timesThrough++;
+
+        }
     }
 
     private void swapValues(int index1, int index2) {
