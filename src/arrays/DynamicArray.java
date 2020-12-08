@@ -77,6 +77,7 @@ public class DynamicArray<String>{
 
     // Some array implementations offer methods like insert (also known as pushBack).
     // Which is like insert, only in does the insert at the end of the array.
+    //Takes O(n)
     public void add(String value) {
 
         if (size == initialCapacity) {
@@ -86,7 +87,7 @@ public class DynamicArray<String>{
         data[size] = value;
         size++;
     }
-
+    //takes O(n)
     public void delete(int index) {
         // Copy down
         for (int j = index; j < size - 1; j++) {
@@ -98,11 +99,11 @@ public class DynamicArray<String>{
 
         size--; //if this isn't added the last element will still be returned
     }
-
+    // takes O(1)
     public boolean isEmpty() {
         return size == 0;
     }
-
+    //takes O(n)
     public boolean Contains(String value) {
         for (int i = 0; i <= size -  1; i++) {
             String currentValue = (String)data[i];
