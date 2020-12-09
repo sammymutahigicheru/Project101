@@ -17,12 +17,22 @@ public class HourGlassChallenge {
         //step 3,loop through the entire 2D array
         for(int i=0;i<rows-2;i++){
             for(int j = 0;j<col - 2;j++){
-                //get the sum
+                /*
+                * Get the sum up to the third column in first and third rows.
+                * For the second row we are only interested with the 2nd column since our hour glass is illustrated as follows
+                *  2 4 4
+                *    2
+                *  1 2 4
+                *  the sum should be 19
+                * */
                 int current_hour_glass_sum = arr[i][j] + arr[i][j+1] + arr[i][j+2]+arr[i+1][j+1]+arr[i+2][j]+arr[i+2][j+1]+arr[i+2][j+2];
-                //get the max sum
+                /*
+                *Update the max sum by comparing the sum of current hour glass and the initially stored max hour glass sum
+                * */
                 max_hour_glass_sum = Math.max(max_hour_glass_sum,current_hour_glass_sum);
             }
         }
+        //return the maximum hour glass sum
         return max_hour_glass_sum;
 
     }
