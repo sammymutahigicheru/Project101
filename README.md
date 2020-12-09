@@ -1,6 +1,6 @@
 # Project101
-This is my multi-month study plan for going from android developer to software engineer for a large company.
-> My study study plan about 3-4 hours per day, for the next 7 months.
+This is my multi-month study plan for going from an android developer to a software engineer.
+> My study study plan being about 3-4 hours per day, for the next 8 months.
 > After completing a study,I will be marking it with [ x ] as done
 
 ## Table of Contents
@@ -454,6 +454,5 @@ Graphs can be used to represent many problems in computer science, so this secti
         - [ ] count connected components in a graph
         - [ ] list strongly connected components
         - [ ] check for bipartite graph
-        
-# Via the help and putting turns of work and effort in all these I believe I will be joining Microsoft Kenya or any big company 
+       
     
