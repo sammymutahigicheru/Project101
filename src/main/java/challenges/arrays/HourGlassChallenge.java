@@ -1,4 +1,4 @@
-package challenges;
+package challenges.arrays;
 
 /*
 * The purpose of this challenge is to show the understanding of 2D arrays
