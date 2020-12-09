@@ -3,7 +3,7 @@ package challenges.arrays;
 /*
 * The purpose of this challenge is to show the understanding of 2D arrays
 *
-*
+*Takes O(n^2) time complexity and O(1) space complexity
 * */
 
 public class HourGlassChallenge {
