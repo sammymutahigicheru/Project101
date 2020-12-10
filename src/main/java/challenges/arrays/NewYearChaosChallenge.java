@@ -1,6 +1,6 @@
 package challenges.arrays;
 
-public class MinimumSwaps {
+public class NewYearChaosChallenge {
     /*
     * Brute force solution
     * O(n) time complexity
