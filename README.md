@@ -1,5 +1,5 @@
 # Project101
-This is my multi-month study plan for going from an android developer to a software engineer.
+This is my multi-month study plan to becoming android software engineer.
 > My study study plan being about 3-4 hours per day, for the next 8 months.
 > After completing a study,I will be marking it with [ x ] as done
 
