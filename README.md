@@ -69,7 +69,6 @@ Write code on a paper, not a computer. Test with some sample inputs. Then test i
 
 - Nothing to implement
 - There are a lot of videos here. Just watch enough until you understand it. You can always come back and review
-- If some lectures are too mathy, you can jump down to the bottom and watch the discrete mathematics videos to get the background knowledge
 - [x] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
 - [x] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
 - [x] [Space Complexities (general quick tutorial) (video)](https://www.youtube.com/watch?v=nmoQ6ZKId3k)
