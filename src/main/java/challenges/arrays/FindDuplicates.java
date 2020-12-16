@@ -21,4 +21,10 @@ public class FindDuplicates {
         }
         return duplicates;
     }
+
+    public static void main(String[] args) {
+        FindDuplicates testFindDuplicates = new FindDuplicates();
+        int[] input = {1,2,4,5,7,3,3,4,5,3,10,8};
+        System.out.println("Found Duplicates: "+testFindDuplicates.findDuplicates(input));
+    }
 }
