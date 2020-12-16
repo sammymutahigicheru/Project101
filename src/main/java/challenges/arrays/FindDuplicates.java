@@ -8,6 +8,12 @@ import java.util.Set;
 *
 * */
 public class FindDuplicates {
+    /*
+    * Takes O(n^2) time complexity
+    * and
+    * O(n) space complexity
+    *
+    * */
     Set<Integer> duplicates = new HashSet<>();
     public Set<Integer> findDuplicates(int[] input){
         //a two pointer problem
