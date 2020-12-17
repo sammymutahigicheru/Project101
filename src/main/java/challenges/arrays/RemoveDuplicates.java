@@ -5,6 +5,13 @@ package challenges.arrays;
 *
 * */
 public class RemoveDuplicates {
+    /*
+    * Takes O(n) time complexity
+    * and
+    * O(n) space complexity
+    *
+    *
+    * */
     public int removeAllDuplicates(int[] input) {
         int targetIndex = 0;
         int noDuplicates = input[1];
