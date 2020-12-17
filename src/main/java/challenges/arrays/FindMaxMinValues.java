@@ -22,4 +22,8 @@ public class FindMaxMinValues {
         System.out.println("**************************");
         System.out.println("Minimum value is => "+min);
     }
+
+    public static void main(String[] args) {
+        findMaxMinValue(new int[]{-20, 34, 21, -87, 92});
+    }
 }
