@@ -13,8 +13,8 @@ public class RemoveDuplicates {
     *
     * */
     public int removeAllDuplicates(int[] input) {
-        int targetIndex = 0;
-        int noDuplicates = input[1];
+        int targetIndex = 1;
+        int noDuplicates = input[0];
         for (int i = 1; i < input.length; i++) {
             if (input[i] != noDuplicates) {
                 noDuplicates = input[i];
