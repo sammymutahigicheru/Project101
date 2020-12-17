@@ -3,6 +3,11 @@ package challenges.arrays;
 * Find max and Min Value in a given array
 * */
 public class FindMaxMinValues {
+    /*
+    * Takes O(n) time complexity
+    * and
+    * O(n) space complexity
+    * */
     static void findMaxMinValue(int[] input){
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
