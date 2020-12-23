@@ -63,6 +63,7 @@ public class LinkedList {
         currentNode.next = newNode;
 
     }
+    //Takes O(n) time complexity
     public int size(){
         if (head == null){
             return 0;
@@ -76,6 +77,7 @@ public class LinkedList {
         }
         return count;
     }
+    // Takes O(1) time complexity
     public void clear(){
         //set the head to null
         head = null;
