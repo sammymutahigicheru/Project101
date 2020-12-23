@@ -143,7 +143,7 @@ Write code on a paper, not a computer. Test with some sample inputs. Then test i
         - No need to implement
     - [x] Time
         - O(1) to add item to the front,to get the first item,to clear the list
-        - O(n) to get the last item,to get the size
+        - O(n) to get the last item,to get the size,to add item to the back
 	
 	
 
