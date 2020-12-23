@@ -10,6 +10,16 @@ public class LinkedList {
     }
     private Node head;
     public void addFront(int data){
-
+        //create new node
+        Node newNode = new Node(data);
+        if(head == null){
+            //make the new node the head
+            head = newNode;
+            return;
+        }
+        // set its next point to the head
+        newNode.next = head;
+        //set head point to the new node ,making it the head
+        head = newNode;
     }
 }
