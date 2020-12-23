@@ -24,10 +24,22 @@ public class LinkedList {
         head = newNode;
     }
     //Takes O(1) time complexity
-    public int getFirst() throws IllegalAccessException {
+    public int getFirst() throws IllegalStateException {
         if(head == null){
-            throw new IllegalAccessException("Head is Empty");
+            throw new IllegalStateException("Head is Empty");
         }
         return head.data;
+    }
+    public int getLast() throws IllegalStateException{
+        if(head == null){
+            throw new IllegalStateException("Empty List");
+        }
+        //get current node
+        Node current = head;
+        while (current.next != null){
+            current = current.next; //O(n)
+        }
+        //we are at the tail
+        return current.data;
     }
 }
