@@ -9,6 +9,7 @@ public class LinkedList {
         }
     }
     private Node head;
+    //Takes O(1) time complexity
     public void addFront(int data){
         //create new node
         Node newNode = new Node(data);
@@ -22,6 +23,7 @@ public class LinkedList {
         //set head point to the new node ,making it the head
         head = newNode;
     }
+    //Takes O(1) time complexity
     public int getFirst() throws IllegalAccessException {
         if(head == null){
             throw new IllegalAccessException("Head is Empty");
