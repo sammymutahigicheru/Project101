@@ -82,4 +82,27 @@ public class LinkedList {
         //set the head to null
         head = null;
     }
+    /*
+    * Takes O(n) time complexity in worst case
+    * Takes O(1) time complexity in best case where item to be deleted is at the head
+    * */
+    public void delete(int data){
+        //handle empty list
+        if(head == null){
+            return;
+        }
+        //if head,make next the head
+        if (head.data == data){
+            head = head.next;
+            return;
+        }
+        //if middle,make previous point to next.next
+        Node current = head;
+        while (current.next != null){
+            if (current.next.data == data){
+                current.next = current.next.next;
+            }
+            current = current.next;
+        }
+    }
 }
