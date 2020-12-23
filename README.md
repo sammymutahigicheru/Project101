@@ -113,7 +113,6 @@ Write code on a paper, not a computer. Test with some sample inputs. Then test i
         - [x] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
         - [x] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
         - [x] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-	- [x] [udemy linkedlist course](https://www.udemy.com/course/data-structures-and-algorithms-bootcamp/learn/lecture/8831332#overview)
     - [ ] [C Code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
             - not the whole video, just portions about Node struct and memory allocation
     - [x] Linked List vs Arrays:
@@ -144,7 +143,7 @@ Write code on a paper, not a computer. Test with some sample inputs. Then test i
         - No need to implement
     - [x] Time
         - O(1) to add item to the front,to get the first item
-	- O(n) to get the last item
+        - O(n) to get the last item
 	
 	
 
