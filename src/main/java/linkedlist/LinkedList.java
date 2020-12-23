@@ -42,4 +42,25 @@ public class LinkedList {
         //we are at the tail
         return current.data;
     }
+    //Takes O(n) time complexity
+    public void addBack(int data){
+        //create new node
+        Node newNode = new Node(data);
+        //if list is empty set the new node to be the current head
+        if(head == null){
+            head = newNode;
+            return;
+        }
+        //start at the head
+        Node currentNode = head;
+
+        //walk back to node = null
+        while (currentNode.next != null){
+            currentNode = currentNode.next;
+        }
+
+        //set current.next = newNode
+        currentNode.next = newNode;
+
+    }
 }
