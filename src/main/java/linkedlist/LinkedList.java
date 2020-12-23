@@ -63,4 +63,14 @@ public class LinkedList {
         currentNode.next = newNode;
 
     }
+    public int size(){
+        int count = 0;
+        //count the number of iterations
+        Node current = head;
+        while(current.next != null){
+            current = current.next;
+            count++;
+        }
+        return count;
+    }
 }
