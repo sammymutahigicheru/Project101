@@ -73,4 +73,8 @@ public class LinkedList {
         }
         return count;
     }
+    public void clear(){
+        //set the head to null
+        head = null;
+    }
 }
