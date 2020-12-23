@@ -142,8 +142,8 @@ Write code on a paper, not a computer. Test with some sample inputs. Then test i
         - [Description (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
         - No need to implement
     - [x] Time
-        - O(1) to add item to the front,to get the first item,to clear the list
-        - O(n) to get the last item,to get the size,to add item to the back
+        - O(1) to add item to the front,to get the first item,to clear the list,to delete an item at the head
+        - O(n) to get the last item,to get the size,to add item to the back,to delete item at the middle of the list
 	
 	
 
