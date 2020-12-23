@@ -8,4 +8,8 @@ public class LinkedList {
             this.data = data;
         }
     }
+    private Node head;
+    public void addFront(int data){
+
+    }
 }
