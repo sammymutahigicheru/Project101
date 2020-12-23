@@ -22,7 +22,10 @@ public class LinkedList {
         //set head point to the new node ,making it the head
         head = newNode;
     }
-    public int getFirst(){
-
+    public int getFirst() throws IllegalAccessException {
+        if(head == null){
+            throw new IllegalAccessException("Head is Empty");
+        }
+        return head.data;
     }
 }
