@@ -22,4 +22,7 @@ public class LinkedList {
         //set head point to the new node ,making it the head
         head = newNode;
     }
+    public int getFirst(){
+
+    }
 }
