@@ -9,6 +9,9 @@ public class InsertAtASpecificPositionChallenge {
               this.data = data;
           }
      }
+     /*
+     * Takes O(log n) time complexity
+     * */
     static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
         //new node
         SinglyLinkedListNode newNode = new SinglyLinkedListNode(data);
