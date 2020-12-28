@@ -11,7 +11,7 @@ public class DetectCycleChallenge {
             this.data = data;
         }
     }
-
+    //Takes O(n) time complexity
     boolean hasCycle(Node head) {
         if(head == null) return false;
         //fast node
