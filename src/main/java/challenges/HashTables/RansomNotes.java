@@ -23,6 +23,11 @@ public class RansomNotes {
         }
         HashMap<String,Integer> magazineWords = new HashMap();
         for(int i=0;i<magazine.length;i++){
+            //second constraint
+            if((magazine[i].length()< 1) || (magazine[i].length() > 5)){
+                System.out.println("No");
+                return;
+            }
             if(magazineWords.get(magazine[i]) != null){
                 int count = magazineWords.get(magazine[i]);
                 magazineWords.put(magazine[i],++count);
@@ -31,6 +36,11 @@ public class RansomNotes {
             }
         }
         for(int j=0;j<note.length;j++){
+            //second constraint
+            if((note[j].length()< 1) || (note[j].length() > 5)){
+                System.out.println("No");
+                return;
+            }
             if(magazineWords.get(note[j]) == null){
                 System.out.println("No");
                 return;
