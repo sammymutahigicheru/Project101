@@ -1,5 +1,8 @@
 package challenges.linkedlists;
-
+/*
+*Detect a cycle in a linked list. Note that the head pointer may be 'null' if the list is empty.
+*
+* */
 public class DetectCycleChallenge {
     class Node{
         int data;
