@@ -11,6 +11,9 @@ For example, the note is "Attack at dawn". The magazine contains only "attack at
 *
 * */
 public class RansomNotes {
+    /*
+    * Takes O(m+n) time complexity
+    * */
     static void checkMagazine(String[] magazine, String[] note) {
         //first constraint
         if((magazine.length == 0 || note.length == 0) ||
