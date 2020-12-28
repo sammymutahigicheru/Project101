@@ -10,6 +10,9 @@ class DoublyLinkedListNode {
 }
 
 public class InsertNodeIntoDoublyLinkedListChallenge {
+    /*
+    * Takes O(n) time complexity at worst case
+    * */
     static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
         //create new node
         DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
