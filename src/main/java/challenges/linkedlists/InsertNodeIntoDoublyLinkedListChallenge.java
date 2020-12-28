@@ -10,40 +10,38 @@ class DoublyLinkedListNode {
 }
 
 public class InsertNodeIntoDoublyLinkedListChallenge {
-    /*
-    * Takes O(n) time complexity
-    * */
     static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
         //create new node
         DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
-        if(head == null){
-            return newNode;
-        }
+        if(head == null) return newNode;
         //current node
         DoublyLinkedListNode current = head;
+        //previous node
         DoublyLinkedListNode previous = null;
         //first edge case: data < current.data
-        if(data < current.data){
-            newNode.next = current.next;
+        if(data < current.data){ //insert at the head
+            newNode.next = current;
             newNode.prev = null;
             current.prev = newNode;
             return newNode;
         }
         //move to the back of the list
-        if(current != null && data > current.data){
+        while(current != null && data > current.data){
             previous = current;
             current = current.next;
         }
+        //Second edge case: when we are at the end of the list
         if(current == null){
             newNode.prev = previous;
             newNode.next = null;
             previous.next = newNode;
-        }else{
-            newNode.prev = previous;
-            newNode.next = previous.next;
-            previous.next = newNode;
-            newNode.next.prev = newNode;
+            return head;
         }
+        //Third edge case: At the middle of the list
+        newNode.prev = previous;
+        newNode.next = previous.next;
+        previous.next = newNode;
+        newNode.next.prev = newNode;
 
         return head;
     }
