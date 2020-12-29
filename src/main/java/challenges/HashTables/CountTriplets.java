@@ -7,6 +7,9 @@ import java.util.List;
 * You are given an array and you need to find number of tripets of indices  such that the elements at those indices are in geometric progression for a given common ratio  and .
 * */
 public class CountTriplets {
+    /*
+    * Takes O(n) time complexity
+    * */
     static long countTriplets(List<Long> arr, long r){
         HashMap<Long,Long> prev = new HashMap();
         HashMap<Long,Long> next = new HashMap();
