@@ -8,6 +8,7 @@ import java.util.HashMap;
 * Given a string, find the number of pairs of substrings of the string that are anagrams of each other.
 * */
 public class SherlockAnagramChallenge {
+    //Takes O(n) time complexity
     static int sherlockAndAnagrams(String s){
         HashMap<String,Integer> hash_map = new HashMap();
         for(int i=0;i<s.length();i++){
