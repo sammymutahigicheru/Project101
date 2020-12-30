@@ -197,10 +197,9 @@ Write code on a paper, not a computer. Test with some sample inputs. Then test i
         - get(key)
         - remove(key)
      - [x] Time
-        - O(1) lookup,,-->killer feature
+        - O(1) lookup-->killer feature
     - [x] Space
-        - LinkedList hold two main pieces of information(value and a pointer) per node.This Means the amount of data stored increases linearly.
-        - Therefore, the space needed is O(n)	
+        - O(n)
 
 ## More Knowledge
 
