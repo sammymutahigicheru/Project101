@@ -5,4 +5,7 @@ package challenges.HashTables;
 * Given a string, find the number of pairs of substrings of the string that are anagrams of each other.
 * */
 public class SherlockAnagramChallenge {
+    static int sherlockAndAnagrams(String s){
+
+    }
 }
