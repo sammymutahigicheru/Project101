@@ -15,6 +15,10 @@ The queries are given in the form of a 2-D array  of size  where  contains the o
 * */
 public class FrequencyQueries {
     static List<Integer> freqQuery(List<List<Integer>> queries){
+        ArrayList<Integer> res = new ArrayList<>(); //will hold res 0 and 1
+        HashMap<Integer, Integer> hashMap = new HashMap<>();  //helps with the lookup
+        for (int i=0;i<queries.size();i++){
 
+        }
     }
 }
