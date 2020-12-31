@@ -36,8 +36,13 @@ public class FrequencyQueries {
                     }
                 }
             }else //- 3z : Check if any integer is present whose frequency is exactly z. If yes, print 1 else 0.
-                {
-
+            {
+                ArrayList<Integer> l = new ArrayList<>(hashMap.values());
+                if (l.contains(ls.get(1))){
+                    res.add(1);
+                }else{
+                    res.add(0);
+                }
             }
         }
         return res;
