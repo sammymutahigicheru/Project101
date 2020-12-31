@@ -1,4 +1,9 @@
 package challenges.HashTables;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 /*
 *You are given  queries. Each query is of the form two integers described below:
 - 1x : Insert x in your data structure.
@@ -9,4 +14,7 @@ The queries are given in the form of a 2-D array  of size  where  contains the o
 *
 * */
 public class FrequencyQueries {
+    static List<Integer> freqQuery(List<List<Integer>> queries){
+
+    }
 }
