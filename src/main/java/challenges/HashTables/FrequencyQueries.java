@@ -35,7 +35,11 @@ public class FrequencyQueries {
                         hashMap.replace(ls.get(1),hashMap.get(ls.get(1)) - 1);
                     }
                 }
+            }else //- 3z : Check if any integer is present whose frequency is exactly z. If yes, print 1 else 0.
+                {
+
             }
         }
+        return res;
     }
 }
