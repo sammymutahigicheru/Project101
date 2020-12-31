@@ -18,7 +18,11 @@ public class FrequencyQueries {
         ArrayList<Integer> res = new ArrayList<>(); //will hold res 0 and 1
         HashMap<Integer, Integer> hashMap = new HashMap<>();  //helps with the lookup
         for (int i=0;i<queries.size();i++){
+            ArrayList<Integer> ls = (ArrayList<Integer>) queries.get(i); //convert item to arraylist
+            //first case when 1
+            if (ls.get(0) == 1){
 
+            }
         }
     }
 }
