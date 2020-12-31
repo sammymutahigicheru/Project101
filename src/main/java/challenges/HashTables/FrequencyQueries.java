@@ -19,7 +19,7 @@ public class FrequencyQueries {
         HashMap<Integer, Integer> hashMap = new HashMap<>();  //helps with the lookup
         for (int i=0;i<queries.size();i++){
             ArrayList<Integer> ls = (ArrayList<Integer>) queries.get(i); //convert item to arraylist
-            //first case when 1
+            //- 1x : Insert x in your data structure.simply means index(0) == 1
             if (ls.get(0) == 1){
                 if (hashMap.containsKey(ls.get(1))){
                     hashMap.replace(ls.get(1),hashMap.get(ls.get(1))+1);
