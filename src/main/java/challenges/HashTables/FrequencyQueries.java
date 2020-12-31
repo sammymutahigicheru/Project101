@@ -21,7 +21,11 @@ public class FrequencyQueries {
             ArrayList<Integer> ls = (ArrayList<Integer>) queries.get(i); //convert item to arraylist
             //first case when 1
             if (ls.get(0) == 1){
-
+                if (hashMap.containsKey(ls.get(1))){
+                    hashMap.replace(ls.get(1),hashMap.get(ls.get(1))+1);
+                }else {
+                    hashMap.put(ls.get(1),1);
+                }
             }
         }
     }
