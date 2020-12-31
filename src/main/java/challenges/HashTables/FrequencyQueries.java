@@ -26,6 +26,15 @@ public class FrequencyQueries {
                 }else {
                     hashMap.put(ls.get(1),1);
                 }
+            }else if (ls.get(0) == 2) //- 2y : Delete one occurence of y from your data structure, if present.
+            {
+                if (hashMap.containsKey(ls.get(1))){
+                    if (hashMap.get(ls.get(1)) == 1){
+                        hashMap.remove(ls.get(1));
+                    }else{
+                        hashMap.replace(ls.get(1),hashMap.get(ls.get(1)) - 1);
+                    }
+                }
             }
         }
     }
