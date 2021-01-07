@@ -8,4 +8,8 @@ package challenges.strings;
 *
 * */
 public class AlternatingCharacters {
+
+    static int alternatingCharacters(String s){
+
+    }
 }
