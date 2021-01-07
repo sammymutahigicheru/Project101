@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class MakeAnagrams {
+    //Takes O(m+n) time complexity
     static int makeAnagram(String a, String b){
         HashMap<Character,Integer> count = new HashMap();
 
