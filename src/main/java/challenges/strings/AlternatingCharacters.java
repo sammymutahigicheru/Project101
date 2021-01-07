@@ -8,7 +8,7 @@ package challenges.strings;
 *
 * */
 public class AlternatingCharacters {
-
+    //Takes O(n) time complexity and O(1) space complexity
     static int alternatingCharacters(String s){
         int count = 0;
         for(int i=0;i<s.length()-1;i++){ //we going up to length - 1 since we are doing characters check up to length + 1
