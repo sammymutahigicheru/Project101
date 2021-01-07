@@ -11,4 +11,7 @@ Given two strings, a  and b , that may or may not be of the same length, determi
 * */
 
 public class MakeAnagrams {
+    static int makeAnagram(String a, String b){
+
+    }
 }
