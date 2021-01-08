@@ -3,6 +3,7 @@ package challenges.sorting;
 *Count the total number of swaps needed to sort the array
 * */
 public class BubbleSort {
+    //Takes O(n^2) time complexity and O(n) space complexity
     static void countSwaps(int[] a) {
         int swaps = 0;
         for(int i=0;i<a.length;i++){
