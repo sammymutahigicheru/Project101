@@ -12,6 +12,7 @@ import java.util.*;
 
 public class SherlockAndValidString {
     static String isValid(String s) {
+        //Takes O(m+n) time complexity and O(n) space complexity
         HashMap<Character, Integer> count = new HashMap();
         for (int i = 0; i < s.length(); i++) {
             if (count.containsKey(s.charAt(i))) {
