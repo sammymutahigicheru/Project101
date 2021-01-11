@@ -13,36 +13,28 @@ A special substring is any substring of a string which meets one of those criter
 public class SpecialStringAgain {
     // Brute force solution
     static long substrCount(int n, String s) {
-        StringBuilder stringBuilder = new StringBuilder();
-        long count = 0;
-        for (int i=0;i<n;i++){
-            stringBuilder.append(s.charAt(i));
-            count++;
-        }
-        for (int i = 0;i<n-1;i++){
-            if (s.charAt(i) == s.charAt(i+1)){
-                stringBuilder.append(s,i,i+1);
-                count++;
+        long ans = n;
+        for (int i = 0; i < n; i++) {
+            int repeat = 0;
+            while (i + 1 < n && s.charAt(i) == s.charAt(i + 1)) {
+                repeat++;
+                i++;
+            }
+            ans += (repeat * (repeat + 1)) / 2;
+            int pointer = 1;
+            while (i - pointer >= 0 && i + pointer < n
+                    && s.charAt(i + pointer) == s.charAt(i - 1)
+                    && s.charAt(i - pointer) == s.charAt(i - 1)) {
+                ans++;
+                pointer++;
             }
         }
-        for (int i = 0;i<n-3;i++){
-            if (s.charAt(i) == s.charAt(i+1)){
-                stringBuilder.append(s,i,i+3);
-                count++;
-            }
-        }
-        for (int i=0;i<n-2;i++){
-            if (s.charAt(i) == s.charAt(i+2)){
-                stringBuilder.append(s, i, i+2);
-                count++;
-            }
-        }
-        return count;
+        return ans;
     }
 
     public static void main(String[] args) {
         String s = "aaaa";
-        long count = substrCount(4,s);
+        long count = substrCount(4, s);
         System.out.println(count);
     }
 }
