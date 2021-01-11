@@ -25,6 +25,12 @@ public class SpecialStringAgain {
                 count++;
             }
         }
+        for (int i = 0;i<n-3;i++){
+            if (s.charAt(i) == s.charAt(i+1)){
+                stringBuilder.append(s,i,i+3);
+                count++;
+            }
+        }
         for (int i=0;i<n-2;i++){
             if (s.charAt(i) == s.charAt(i+2)){
                 stringBuilder.append(s, i, i+2);
