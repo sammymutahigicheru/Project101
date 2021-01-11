@@ -11,4 +11,8 @@ A special substring is any substring of a string which meets one of those criter
 * */
 
 public class SpecialStringAgain {
+    // Complete the substrCount function below.
+    static long substrCount(int n, String s) {
+
+    }
 }
