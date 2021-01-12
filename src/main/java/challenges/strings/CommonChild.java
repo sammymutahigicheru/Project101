@@ -3,6 +3,11 @@ package challenges.strings;
 import java.util.HashMap;
 
 public class CommonChild {
+    /*
+    * Takes O(n*m) time complexity
+    * Takes O(n) space complexity
+    *
+    * */
     static int commonChild(String s1, String s2) {
         int n = s1.length();
         int[] memo = new int[n + 1];
