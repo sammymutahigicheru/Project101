@@ -3,21 +3,22 @@ package challenges.strings;
 import java.util.HashMap;
 
 public class CommonChild {
-    static int commonChild(String s1, String s2){
-        HashMap<Character,Integer> hashMap = new HashMap<>();
-        for (int i=0;i<s1.length();i++){
-            if(hashMap.containsKey(s1.charAt(i))){
-                hashMap.replace(s1.charAt(i),i);
+    static int commonChild(String s1, String s2) {
+        int n = s1.length();
+        int[] memo = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            int prev = 0;
+            for (int j = 1; j <= n; j++) {
+                int temp = memo[j];
+                if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                    memo[j] = prev + 1;
+                } else {
+                    memo[j] = Math.max(memo[j], memo[j - 1]);
+                }
+                prev = temp;
             }
-            hashMap.put(s1.charAt(i),i);
+
         }
-        for (int j=0;j<s2.length();j++){
-            if (hashMap.containsKey(s2.charAt(j))){
-                continue;
-            }else{
-                hashMap.remove(s1.charAt(j));
-            }
-        }
-        return hashMap.size();
+        return memo[n];
     }
 }
