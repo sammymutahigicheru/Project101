@@ -1,4 +1,10 @@
 package challenges.sorting;
+
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /*
 *Count the total number of swaps needed to sort the array
 * */
@@ -25,5 +31,23 @@ public class BubbleSort {
             System.out.println("First Element: "+a[0]);
             System.out.println("Last Element: "+a[a.length-1]);
         }
+        String[] data = "".split(",");
+        String C = "Age";
+        for (int i=0;i<data.length;i++){
+            if(data[i] == C){
+                BufferedReader reader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream("".getBytes())));
+                String line;
+
+                while (true) {
+                    try {
+                        if (!((line = reader.readLine()) != null)) break;
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
     }
+    // b =8
+    //a =4
 }
