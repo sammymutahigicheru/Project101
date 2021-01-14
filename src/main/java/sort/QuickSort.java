@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class QuickSort {
+    /*
+    * Takes O(n log n) time complexity
+    *
+    * */
     public void quickSort(int[] A){
         quickSort(A,0,A.length-1);
     }
