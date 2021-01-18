@@ -14,7 +14,7 @@ For example, there are  flavors having . Together they have  to spend. They woul
 *
 * */
 public class IceCreamParlor {
-    // Complete the whatFlavors function below.
+    //Takes O(n) time complexity
     static void whatFlavors(int[] cost, int money) {
         Map<Integer,Integer> map = new HashMap<>();
         int[] indexes = new int[2];
