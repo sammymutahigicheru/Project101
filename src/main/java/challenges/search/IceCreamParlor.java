@@ -30,10 +30,14 @@ public class IceCreamParlor {
         System.out.print(indexes[0]);
         System.out.print(" ");
         System.out.print(indexes[1]);
+        System.out.println(" ");
+
     }
 
     public static void main(String[] args) {
         int[] cost = {2 ,2 ,4 ,3};
         whatFlavors(cost,4);
+        int[] cost1 = {1 ,4 ,5 ,3 ,2};
+        whatFlavors(cost1,4);
     }
 }
