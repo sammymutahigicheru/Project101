@@ -1,5 +1,9 @@
 package challenges.search;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 /*
 *Each time Sunny and Johnny take a trip to the Ice Cream Parlor, they pool their money to buy ice cream. On any given day, the parlor offers a line of flavors. Each flavor has a cost associated with it.
 
@@ -10,4 +14,24 @@ For example, there are  flavors having . Together they have  to spend. They woul
 *
 * */
 public class IceCreamParlor {
+    // Complete the whatFlavors function below.
+    static void whatFlavors(int[] cost, int money) {
+        Map<Integer,Integer> map = new HashMap<>();
+        int[] indexes = new int[2];
+        for (int j=0;j<cost.length;j++){
+            int target = money - cost[j];
+            if (map.containsKey(target)){
+                indexes[0] = map.get(target);
+                indexes[1] = target;
+                break;
+            }
+            map.put(cost[j],j+1);
+        }
+        System.out.println(indexes[0]);
+    }
+
+    public static void main(String[] args) {
+        int[] cost = {1 ,4 ,5 ,3 ,2};
+        whatFlavors(cost,4);
+    }
 }
