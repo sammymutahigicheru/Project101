@@ -22,16 +22,18 @@ public class IceCreamParlor {
             int target = money - cost[j];
             if (map.containsKey(target)){
                 indexes[0] = map.get(target);
-                indexes[1] = target;
+                indexes[1] = j+1;
                 break;
             }
             map.put(cost[j],j+1);
         }
-        System.out.println(indexes[0]);
+        System.out.print(indexes[0]);
+        System.out.print(" ");
+        System.out.print(indexes[1]);
     }
 
     public static void main(String[] args) {
-        int[] cost = {1 ,4 ,5 ,3 ,2};
+        int[] cost = {2 ,2 ,4 ,3};
         whatFlavors(cost,4);
     }
 }
