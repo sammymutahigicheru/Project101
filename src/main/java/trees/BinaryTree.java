@@ -9,4 +9,16 @@ Here's a quick visual representation of this type of binary tree:
 *
 * */
 public class BinaryTree {
+    Node root;
+}
+class Node{
+    int value;
+    Node left;
+    Node right;
+
+    Node(int value){
+        this.value = value;
+        right = null;
+        left = null;
+    }
 }
