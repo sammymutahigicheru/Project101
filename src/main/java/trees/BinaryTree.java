@@ -87,6 +87,14 @@ when the current node is null, we've reached a leaf node and we can insert the n
             traversePreOrder(node.right);
         }
     }
+    //Post-order traversal visits the left subtree, the right subtree, and the root node at the end:
+    public void traversePostOrder(Node node) {
+        if (node != null) {
+            traversePostOrder(node.left);
+            traversePostOrder(node.right);
+            System.out.print(" " + node.value);
+        }
+    }
 
 }
 
