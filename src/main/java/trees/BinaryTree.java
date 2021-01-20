@@ -64,6 +64,22 @@ when the current node is null, we've reached a leaf node and we can insert the n
     public boolean containsNode(int value){
         return containsNodeRecursive(root,value);
     }
+
+    /*
+    *
+    * Tree Traversal
+    * Depth-first search is a type of traversal that goes deep as much as possible in every child before exploring the next sibling.
+    *
+    * */
+    //Depth-first search is a type of traversal that goes deep as much as possible in every child before exploring the next sibling.
+    public void traverseInOrder(Node node) {
+        if (node != null) {
+            traverseInOrder(node.left);
+            System.out.print(" " + node.value);
+            traverseInOrder(node.right);
+        }
+    }
+
 }
 
 class Node {
