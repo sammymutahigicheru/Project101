@@ -1,5 +1,8 @@
 package trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /*
 *A binary tree is a recursive data structure where each node can have 2 children at most.
 
@@ -93,6 +96,36 @@ when the current node is null, we've reached a leaf node and we can insert the n
             traversePostOrder(node.left);
             traversePostOrder(node.right);
             System.out.print(" " + node.value);
+        }
+    }
+
+    /*
+    * BFS
+    *
+    *This kind of traversal is also called level-order and visits all the levels of the tree starting from the root, and from left to right.
+    *
+    * */
+    public void traverseLevelOrder() {
+        if (root == null) {
+            return;
+        }
+
+        Queue<Node> nodes = new LinkedList<>();
+        nodes.add(root);
+
+        while (!nodes.isEmpty()) {
+
+            Node node = nodes.remove();
+
+            System.out.print(" " + node.value);
+
+            if (node.left != null) {
+                nodes.add(node.left);
+            }
+
+            if (node.right != null) {
+                nodes.add(node.right);
+            }
         }
     }
 
