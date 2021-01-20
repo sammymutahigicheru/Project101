@@ -10,7 +10,10 @@ Here's a quick visual representation of this type of binary tree:
 * */
 public class BinaryTree {
     Node root;
-
+   // public method that starts the recursion from the root node:
+    public void add(int value){
+        root = addRecursive(root,value);
+    }
     /*
     * Insert Element
     *
@@ -32,6 +35,19 @@ when the current node is null, we've reached a leaf node and we can insert the n
             return current;
         }
         return current;
+    }
+    //creates the binary tree
+    private BinaryTree createBinaryTree(){
+        BinaryTree bt = new BinaryTree();
+        bt.add(6);
+        bt.add(4);
+        bt.add(8);
+        bt.add(3);
+        bt.add(5);
+        bt.add(7);
+        bt.add(9);
+
+        return bt;
     }
 }
 
