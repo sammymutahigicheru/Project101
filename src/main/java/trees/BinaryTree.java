@@ -37,7 +37,7 @@ when the current node is null, we've reached a leaf node and we can insert the n
         return current;
     }
     //creates the binary tree
-    private BinaryTree createBinaryTree(){
+    public BinaryTree createBinaryTree(){
         BinaryTree bt = new BinaryTree();
         bt.add(6);
         bt.add(4);
@@ -60,6 +60,9 @@ when the current node is null, we've reached a leaf node and we can insert the n
         }
         return value < current.value ? containsNodeRecursive(current.left,value)
                 : containsNodeRecursive(current.right, value);
+    }
+    public boolean containsNode(int value){
+        return containsNodeRecursive(root,value);
     }
 }
 
