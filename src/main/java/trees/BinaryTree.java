@@ -10,26 +10,37 @@ Here's a quick visual representation of this type of binary tree:
 * */
 public class BinaryTree {
     Node root;
-    private Node addRecursive(Node current,int value){
-        if (current == null){
+
+    /*
+    * Insert Element
+    *
+    * First, we have to find the place where we want to add a new node in order to keep the tree sorted. We'll follow these rules starting from the root node:
+
+if the new node's value is lower than the current node's, we go to the left child
+if the new node's value is greater than the current node's, we go to the right child
+when the current node is null, we've reached a leaf node and we can insert the new node in that position
+    * */
+    private Node addRecursive(Node current, int value) {
+        if (current == null) {
             return new Node(value);
         }
-        if (value < current.value){
-            current.left = addRecursive(current.left,value);
-        }else if (value > current.value){
-            current.right = addRecursive(current.right,value);
-        }else{
+        if (value < current.value) {
+            current.left = addRecursive(current.left, value);
+        } else if (value > current.value) {
+            current.right = addRecursive(current.right, value);
+        } else {
             return current;
         }
         return current;
     }
 }
-class Node{
+
+class Node {
     int value;
     Node left;
     Node right;
 
-    Node(int value){
+    Node(int value) {
         this.value = value;
         right = null;
         left = null;
