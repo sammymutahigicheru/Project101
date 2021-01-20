@@ -49,6 +49,18 @@ when the current node is null, we've reached a leaf node and we can insert the n
 
         return bt;
     }
+
+    //finding an element
+    private boolean containsNodeRecursive(Node current, int value){
+        if (current == null){
+            return false;
+        }
+        if (value == current.value){
+            return true;
+        }
+        return value < current.value ? containsNodeRecursive(current.left,value)
+                : containsNodeRecursive(current.right, value);
+    }
 }
 
 class Node {
