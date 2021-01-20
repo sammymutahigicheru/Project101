@@ -71,12 +71,20 @@ when the current node is null, we've reached a leaf node and we can insert the n
     * Depth-first search is a type of traversal that goes deep as much as possible in every child before exploring the next sibling.
     *
     * */
-    //Depth-first search is a type of traversal that goes deep as much as possible in every child before exploring the next sibling.
+    //The in-order traversal consists of first visiting the left sub-tree, then the root node, and finally the right sub-tree:
     public void traverseInOrder(Node node) {
         if (node != null) {
             traverseInOrder(node.left);
             System.out.print(" " + node.value);
             traverseInOrder(node.right);
+        }
+    }
+    //Pre-order traversal visits first the root node, then the left subtree, and finally the right subtree:
+    public void traversePreOrder(Node node) {
+        if (node != null) {
+            System.out.print(" " + node.value);
+            traversePreOrder(node.left);
+            traversePreOrder(node.right);
         }
     }
 
