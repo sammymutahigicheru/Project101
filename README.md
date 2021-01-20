@@ -242,6 +242,7 @@ Write code on a paper, not a computer. Test with some sample inputs. Then test i
 
 - ### Trees - Notes & Background
     - [ ] [Series: Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
+    - [x] [Freecode Camp Trees ](https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/)
     - basic tree construction
     - traversal
     - manipulation algorithms
