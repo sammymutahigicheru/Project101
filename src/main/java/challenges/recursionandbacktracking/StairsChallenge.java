@@ -8,6 +8,23 @@ Given the respective heights for each of the  staircases in his house, find and 
 * */
 public class StairsChallenge {
     static int stepPerms(int n){
+        int[] arr = new int[n];
+        if(n == 0){
+            return 0;
+        }else if(n==1){
+            return 1;
+        }else if(n==2){
+            return 2;
+        }else if(n==3){
+            return 4;
+        }
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 4;
+        for(int i=3;i<n;i++){
+            arr[i] = arr[i-1] + arr[i-2]+arr[i-3];
+        }
 
+        return arr[arr.length-1];
     }
 }
