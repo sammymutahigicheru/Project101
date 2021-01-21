@@ -1,4 +1,4 @@
-package challenges.recursionandbacktracking
+package challenges.recursionandbacktracking;
 
 /*
 * The Fibonacci Sequence
@@ -11,4 +11,7 @@ Programmatically:
 *
 * */
 class Fibonacci {
+    public static int fibonacci(int n){
+
+    }
 }
