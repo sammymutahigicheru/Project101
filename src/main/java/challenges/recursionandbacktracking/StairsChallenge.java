@@ -7,4 +7,7 @@ Given the respective heights for each of the  staircases in his house, find and 
 *
 * */
 public class StairsChallenge {
+    static int stepPerms(int n){
+
+    }
 }
