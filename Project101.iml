@@ -32,5 +32,6 @@
         <jarDirectory url="jar://$USER_HOME$/Downloads/jar_files.zip!/" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
   </component>
 </module>
