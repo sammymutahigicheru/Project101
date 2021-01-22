@@ -16,7 +16,41 @@ The subset of brackets enclosed within the confines of a matched pair of bracket
 *
 * */
 public class BalancedBrackets {
-    static String isBalanced(String s){
 
+    static String isBalanced(String s){
+        Stack<Character> stack = new Stack<>();
+        for (char c:s.toCharArray()){
+            switch (c){
+                case '{':
+                    stack.push('{');
+                    break;
+                case '[':
+                    stack.push('[');
+                    break;
+                case '(':
+                    stack.push('(');
+                    break;
+                case '}':
+                    if (stack.empty() || stack.peek() != '{'){
+                        return "NO";
+                    }
+                    stack.pop();
+                    break;
+                case ']':
+                    if (stack.empty() || stack.peek() != '['){
+                        return "NO";
+                    }
+                    stack.pop();
+                    break;
+                case ')':
+                    if (stack.empty() || stack.peek() != '('){
+                        return "NO";
+                    }
+                    stack.pop();
+                    break;
+
+            }
+        }
+        return stack.empty() ? "YES" : "NO";
     }
 }
