@@ -16,4 +16,7 @@ The subset of brackets enclosed within the confines of a matched pair of bracket
 *
 * */
 public class BalancedBrackets {
+    static String isBalanced(String s){
+
+    }
 }
