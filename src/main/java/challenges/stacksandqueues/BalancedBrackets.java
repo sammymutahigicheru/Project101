@@ -16,7 +16,7 @@ The subset of brackets enclosed within the confines of a matched pair of bracket
 *
 * */
 public class BalancedBrackets {
-
+    //Takes O(n) space and Time complexity
     static String isBalanced(String s){
         Stack<Character> stack = new Stack<>();
         for (char c:s.toCharArray()){
