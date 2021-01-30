@@ -15,7 +15,7 @@ public class MatrixMultiplication {
     double multiplyMatricesCell(double[][] firstMatrix, double[][] secondMatrix, int row, int col) {
         double cell = 0;
         for (int i = 0; i < secondMatrix.length; i++) {
-            cell += firstMatrix[row][i] * secondMatrix[i][col];
+            cell += firstMatrix[row][i] * secondMatrix[i][col]; //summation product of (row,i)*(col,i) of A,B
         }
         return cell;
     }
