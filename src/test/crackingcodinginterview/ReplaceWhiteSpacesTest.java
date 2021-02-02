@@ -16,4 +16,8 @@ public class ReplaceWhiteSpacesTest{
     public void inputStringWithWhiteSpaces_ReturnsCorrectOutput(){
         Assert.assertEquals("Mr%20John%20Smith",replaceWhiteSpaces.replaceString(test_string));
     }
+    @Test
+    public void inputAAtringWithOneWhiteSpace_ReturnsCorrectOutput(){
+        Assert.assertEquals("MrJohn%20Smith",replaceWhiteSpaces.replaceString("MrJohn Smith "));
+    }
 }
