@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public class ReplaceWhiteSpaces {
     String replaceString(String s){
         Pattern pattern = Pattern.compile("\\s");
-        Matcher matcher = pattern.matcher(s);
+        Matcher matcher = pattern.matcher(s.trim());
         return matcher.replaceAll("%20");
     }
 }
